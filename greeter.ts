@@ -2,4 +2,8 @@ function greet(name: string) {
     return `Hello ${name}`;
 }
 
-export = greet;
+//ES6 style
+export var greetex = greet;
+
+//commonjs style
+//export = greet; 

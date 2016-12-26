@@ -45,10 +45,11 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var greeter = __webpack_require__(1);
+	//import greeter = require('./greeter');
+	var greeter_1 = __webpack_require__(1);
 	var $ = __webpack_require__(2);
 	$(function () {
-	    $(document.body).html(greeter('Nguyen'));
+	    $(document.body).html(greeter_1.greetex('Webpack!'));
 	});
 
 
@@ -58,9 +59,9 @@
 
 	"use strict";
 	function greet(name) {
-	    return "Hello1 " + name;
+	    return "Hello " + name;
 	}
-	module.exports = greet;
+	exports.greetex = greet;
 
 
 /***/ },

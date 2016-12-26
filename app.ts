@@ -1,6 +1,11 @@
-import greeter = require('./greeter');
+//commonjs style
+//import greeter = require('./greeter');
+
+//ES6 style
+import { greetex } from './greeter';
+
 import $ = require('jquery');
 
 $(() => {
-    $(document.body).html(greeter('Webpack!'));
+    $(document.body).html(greetex('Webpack!'));
 });
